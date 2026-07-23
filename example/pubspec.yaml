@@ -1,0 +1,22 @@
+name: async_request_manager_example
+description: Demonstrates the async_request_manager plugin — join, cancelPrevious, parallel, timeout, and cancellation.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.17.0 <4.0.0"
+  flutter: ">=3.3.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  async_request_manager:
+    path: ..
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
