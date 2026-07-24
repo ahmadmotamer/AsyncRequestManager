@@ -173,8 +173,8 @@ class _DemoPageState extends State<DemoPage> {
     return AnimatedContainer(
       duration: const Duration(milliseconds: 200),
       color: running > 0
-          ? Colors.green.withOpacity(0.1)
-          : Colors.grey.withOpacity(0.07),
+          ? Colors.green.withValues(alpha: 0.1)
+          : Colors.grey.withValues(alpha: 0.07),
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 10),
       child: Row(
         children: [
@@ -323,7 +323,7 @@ class _DemoButton extends StatelessWidget {
       child: ElevatedButton.icon(
         style: ElevatedButton.styleFrom(
           foregroundColor: color,
-          side: BorderSide(color: color.withOpacity(0.4)),
+          side: BorderSide(color: color.withValues(alpha: 0.4)),
         ),
         onPressed: onPressed,
         icon: Icon(icon, size: 18),
