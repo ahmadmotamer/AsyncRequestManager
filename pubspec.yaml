@@ -1,33 +1,14 @@
 name: async_request_manager
 description: "A Dart utility for managing concurrent async operations with deduplication, cancellation, and parallel-execution strategies."
-version: 0.3.0
+version: 1.0.0
 homepage: https://github.com/ahmadmotamer/AsyncRequestManager
 
 environment:
   sdk: ">=2.17.0 <4.0.0"
-  flutter: ">=3.3.0"
 
 dependencies:
   async: ^2.13.0
-  flutter:
-    sdk: flutter
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
   test: ^1.24.0
   lints: ^2.1.0
-  mockito: ^5.5.1
-
-flutter:
-  plugin:
-    platforms:
-      android:
-        package: com.sonbola.async_request_manager
-        pluginClass: AsyncRequestManagerPlugin
-      ios:
-        pluginClass: AsyncRequestManagerPlugin
-      macos:
-        pluginClass: AsyncRequestManagerPlugin
-      windows:
-        pluginClass: AsyncRequestManagerPlugin

@@ -1,3 +1,10 @@
+## 1.0.0
+
+- Converted project structure from Flutter plugin to a standard Dart package.
+- Added `CancelInfo.cancelledAt` computed getter (`startedAt + elapsed`).
+- Added `AsyncRequestManager.hasRunningOperations` convenience getter.
+- Fixed `dispose()` to set `_disposed = true` before calling `cancelAll()`, closing a race window where `execute()` could slip in during async teardown. Added idempotency guard so a second `dispose()` call is a no-op.
+
 ## 0.3.0
 
 ### Breaking changes
